@@ -1,0 +1,30 @@
+name: chromagraphnet
+channels:
+  - pytorch
+  - pyg
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - numpy>=1.21
+  - scipy>=1.7
+  - pandas>=1.4
+  - tqdm>=4.60
+  - pyyaml>=6.0
+  - matplotlib>=3.5
+  - seaborn>=0.12
+  - jupyter
+  - notebook
+  - ipykernel
+  # Genomics tools (optional, for data preprocessing)
+  - pybigwig>=0.3.18
+  - pyfaidx>=0.7
+  - cooler>=0.9
+  # PyTorch (CPU build by default; for CUDA, replace with the appropriate
+  # pytorch-cuda variant from the pytorch channel).
+  - pytorch>=2.0
+  # PyTorch Geometric and its dependencies
+  - pyg>=2.4
+  - pip:
+      - -e .

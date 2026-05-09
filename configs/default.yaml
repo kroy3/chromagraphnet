@@ -1,0 +1,85 @@
+# ChromaGraphNet default configuration.
+# All values here match the defaults in chromagraphnet.models.chromagraphnet.ChromaGraphNetConfig.
+# Override individual fields by passing key=value pairs via Hydra
+# or by editing this file directly.
+
+backbone:
+  acc_in_channels: 2
+  acc_hidden_channels: 32
+  acc_kernel_size: 7
+  acc_num_conv1d_layers: 15
+  conv2d_channels: 32
+  conv2d_kernel_size: 3
+  num_conv2d_layers: 3
+  coacc_in_channels: 40
+  coacc_hidden_channels: 32
+  coacc_kernel_size: 7
+  coacc_num_residual_blocks: 2
+  receptive_field_bp: 4_010_000
+  anchor_resolution_bp: 10_000
+  fine_resolution_bp: 50
+  coacc_resolution_bp: 500
+  n_anchor_bins: 401
+  fused_dim: 128
+  vstripe_length: 201
+
+modalities:
+  rna_use: true
+  rna_in_dim: 1
+  rna_hidden_dim: 64
+  chip_use: true
+  chip_n_marks: 5
+  chip_hidden_channels: 32
+  chip_kernel_size: 7
+  chip_n_layers: 4
+  motif_use: true
+  motif_n_factors: 200
+  motif_hidden_dim: 64
+
+fusion:
+  film_use: true
+  n_latents: 64
+  n_heads: 8
+  n_layers: 2
+  ffn_mult: 2
+  dropout: 0.1
+  learnable_modality_gates: true
+
+graph:
+  n_layers: 3
+  n_heads: 8
+  edge_dim: 4
+  dropout: 0.2
+  use_residual: true
+  use_layernorm: true
+
+heads:
+  n_compartment_subtypes: 5
+  upsample_factor: 2
+  mc_dropout: 0.1
+
+physics:
+  target_alpha: 0.85
+  distance_weight: 1.0
+  ctcf_weight: 0.5
+  compartment_weight: 0.5
+  min_separation_bins: 2
+
+training:
+  optimizer: adamw
+  learning_rate: 1.0e-4
+  weight_decay: 1.0e-4
+  batch_size: 4
+  gradient_accumulation_steps: 4
+  max_epochs: 50
+  scheduler: cosine
+  warmup_epochs: 2
+  loss_weights:
+    contact_map: 1.0
+    vstripe: 1.0
+    compartment: 0.5
+    loop_anchor: 0.5
+    insulation: 0.5
+    physics: 0.1
+
+use_graph: true

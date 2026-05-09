@@ -1,6 +1,7 @@
 MIT License
 
-Copyright (c) 2026 Kushal Raj Roy
+Copyright (c) 2026 Roy (University of Houston) and Juboraj Roy Pavel
+                   (Old Dominion University, Department of Computer Science)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +20,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+This project includes architectural inspiration from the ChromaFold project
+(Gao et al., Nature Communications 2024) released under the MIT License.
+The ChromaFold authors retain copyright over their original work.

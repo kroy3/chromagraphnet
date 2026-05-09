@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+message: "If you use ChromaGraphNet, please cite it as below."
+title: "ChromaGraphNet: multi-modal graph-attention prediction of 3D genome architecture"
+abstract: >-
+  ChromaGraphNet extends the ChromaFold backbone (Gao et al., Nature
+  Communications 2024) into a multi-modal graph-aware model that jointly
+  predicts contact maps, A/B compartment subtypes, loop anchors, and
+  insulation scores from scATAC-seq, scRNA-seq, histone ChIP/CUT&RUN, and
+  TF motif inputs. The architecture combines ChromaFold's two-branch CNN
+  with cross-modal FiLM and bottleneck-transformer fusion, three layers
+  of GATv2 attention over a chromatin graph, and Bayesian dropout
+  uncertainty estimation.
+type: software
+version: "0.1.1"
+date-released: "2026-05-07"
+license: MIT
+repository-code: "https://github.com/USERNAME/chromagraphnet"
+url: "https://github.com/USERNAME/chromagraphnet"
+authors:
+  - family-names: Roy
+    given-names: ""
+    affiliation: "Department of Biology and Biochemistry, University of Houston"
+  - family-names: Pavel
+    given-names: "Juboraj Roy"
+    affiliation: "Department of Computer Science, Old Dominion University"
+keywords:
+  - 3D genome
+  - Hi-C
+  - scATAC-seq
+  - graph neural network
+  - deep learning
+  - chromatin
+  - neuroscience
+  - ChromaFold
+  - GATv2
+references:
+  - type: article
+    title: "ChromaFold predicts the 3D contact map from single-cell chromatin accessibility"
+    authors:
+      - family-names: Gao
+        given-names: Vianne
+    journal: "Nature Communications"
+    volume: 15
+    start: 9432
+    year: 2024
+    doi: "10.1038/s41467-024-53628-0"
+  - type: conference-paper
+    title: "How Attentive are Graph Attention Networks?"
+    authors:
+      - family-names: Brody
+        given-names: Shaked
+      - family-names: Alon
+        given-names: Uri
+      - family-names: Yahav
+        given-names: Eran
+    conference:
+      name: "International Conference on Learning Representations"
+    year: 2022
