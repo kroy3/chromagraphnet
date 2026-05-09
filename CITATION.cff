@@ -18,11 +18,8 @@ repository-code: "https://github.com/USERNAME/chromagraphnet"
 url: "https://github.com/USERNAME/chromagraphnet"
 authors:
   - family-names: Roy
-    given-names: ""
+    given-names: Kushal Raj 
     affiliation: "Department of Biology and Biochemistry, University of Houston"
-  - family-names: Pavel
-    given-names: "Juboraj Roy"
-    affiliation: "Department of Computer Science, Old Dominion University"
 keywords:
   - 3D genome
   - Hi-C
