@@ -19,7 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 
-- Updated author metadata: corresponding author Roy (University of Houston, Department of Biology and Biochemistry) and second author Juboraj Roy Pavel (Old Dominion University, Department of Computer Science).
+- Updated author metadata: corresponding author Kushal Raj Roy (University of Houston, Department of Biology and Biochemistry)
 - Added `AUTHORS.md` with full affiliations and contribution roles.
 - Updated `LICENSE` copyright statement, `CITATION.cff`, `pyproject.toml`, and `README.md` accordingly.
 
