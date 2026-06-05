@@ -9,7 +9,7 @@
 **Architecture:** ChromaFold backbone (frozen or fine-tuned) + modality encoders (RNA, ChIP, motif) + cross-modal fusion (FiLM + bottleneck transformer) + graph attention (GATv2 x 3) + multi-task heads
 **Parameters:** ~3.5M at default config (4.01 Mb context, 401 anchor bins, embed_dim=128)
 **License:** MIT
-**Repository:** https://github.com/USERNAME/chromagraphnet
+**Repository:** https://github.com/kroy3/chromagraphnet
 
 ## Intended Use
 
